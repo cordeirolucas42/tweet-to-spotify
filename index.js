@@ -3,7 +3,11 @@ var EnvVar = require("dotenv");
 EnvVar.config();
 var SpotifyWebApi = require("spotify-web-api-node");
 const playlist = process.env.PLAYLIST;
-var followers = [];
+// var followers = [];
+// var following = [];
+
+//hardcoding it for now
+const mutuals = ["1185219355396759554","1002972480699555840","554780094","1310782018960216064","57273103","965979430110851072","910335955822940160","768256236143816705","786346457691324416","1309141799852822528","1308879895699828739","1202413706","1933551038","934256105982701569","1290145211092545544","922235467109748737","1298465963134918656","899838918790717444","1301691793222836224","1300621717820317696","59596007","1182702608366133248","1298753342437560325","1298269398105329669","1298759779360407552","2282871480","1282321494299807745","735964075633545216","1241553377672257538","60123607","65411707","1291743094195585024","3092203009","824038546461913088","27450732","741527906128699393","1288514720555839490","1283588134303870982","3614670435","970447663912144896","1261470585210765312","3426936442","49771408","1630056542","1199092730846167042","964302442140717057","187923390","1191496408198717440","1242954335014866953","782922135471812608","1269388017627803649","1232037975799861258","52810524","2550989070","845050027064070144","2502564499","967863564328407040","1059619139843698688","728560297607335936","2190503096","1220333245142896641","14357628","1263862816534147073","1104888159060533251","1241046039966232581","908061250227142659","758409469328064512","850041691851698176","1090305092467810304","1237892740194742272","1258596257167220737","1251832598109847552","1238148004470820867","1250845530772721664","1226961484233740290","1217851244120887297","1093008313275551744","774439308937879552","1080515974581882880","1241118919315927040","3382451973","18774441","1238143310260244486","54417268","1211651060168683520","1209120182653853700","1537691874","1006189707938721792","1220015431014080512","1182822533298638849","1075135440632582145","1213827832113070081","1212584010917928960","1211448283681280000","2755054108","218670749","37042887","1205349228433854464","56301347","820639213192364033","1160024058274230273","160984633","1178856503765282816","1198572892537143301","740983427818741760","1193232530482302978","1068136027942998019","2513164778","4021323443","47766090","4077533920","948717821323825154","1169699468410785796","1168824373622558720","784175694104424448","3077667880","828570519083560961","49392223","48832816","1161793159791333379","1155599368831033348","1153038532744814593","1154469787671699457","2466609829","331828071","916955680740990977","2382736574","175193539","1949989244","1034545425045499905","28708265","1066313393412468736","1069970845299367936","1529069310","823391731538345984","4454415732","1031010332356091906","1138198178426236933","434312287","95708438","18207926","1127634802407038977","918461668627288065","27574133","807186809134399488","168904960","126720479","988032461752979457","997133175099801600","1391947490","2416550358","150346492","253754085","4558361325","351222194","1096585318088785922","1198135826","1038203047141363715","3240591767","1089299431428640770","1090376762771542018","1090044042677796864","858136640346259456","499438536","1083157180814102529","1082810431436140544","720664058555428864","1067534984817360896","4658914641","842145032014553088","386740113","4751397327","803337200","1018992939371024391","1065310986830340096","966508279","43134252","785329606211559424","330422371","108669005","1024032886587047937","568462922","2616058242","68830412","795755589058129920","3438904612","159366879","621324343","43711752","1041971163038187520","999069131851878400","967452954826600448","244055769","294178281","3618863121","1042281715677454337","154649757","968239198523228160","88320095","1035201058002354176","3239910489","880647590039236610","719190338041200640","1030934668508647424","2885017409","1029042433538097153","382142885","3031425582","1023340544372748288","1024815819027636224","1016816711260147712","1920246392","2453830616","1021984447514779648","906726597604134912","844693854","3225925655","1014063354313367552","194337818","332007062","60801953","83024540","1694510305","153241476","1007293704384761856","2990672931","947249462975528960","229135805","146818640","905811264458379264","1003456917828788227","1001597070032109568","2721021710","1327103138","82517207","2474676528","991673337352015872","989606973867024387","975154281119698944","133327364","975315705825460230","709199447402651648","173612856","981848152398618624","299261550","766453740769607681","980840400633126918","711201004948221953","822988325015486465","87498222","17111887","751940494746390528","70451171","578168628","968536475225731072","40633463","57364836","1018134385","791788822149365760","218123741","706643734717407232","895356580006416386","731199356532084740","357061429","956636328069926913","42292377","3330345531","2837596864","2836889047","38554050","827095070","755977403994890240","2511077855","2818179825","4514443216","2944449890","891073369172586497","483388153","4789627239","1309247612","14392350","2729543410","180979505","845402324659027968","52374879","2259564404","3785820441","2728549718","723518738700615680","889500455402962944","47095165","925400613596385281","919178498174083072","51943270","15763144","212568665","735280077429166080","12244282","239371867","91133830","21816515","888576869095886848","37023684","883736472330829824","3021845746","109428747","374090802","727623128348766209","914369742009487360","2493197432","202490763","104968245","761817594181607424","18588015","71729898","33813070","809254214266454016","861722812972748800","895613314730012672","883579820931776512","3495284421","4134916215","865602576","878748075736653825","605655414","879710143352643584","2847530819","1620889861","159163861","1026076796","478993024","126142085","739152283032752130","142386077","29080828","41004930","859214855244566528","66412851","736326636916858885","236797457","843867473724301316","841703325993205760","60228698","127614425","767721719415144448","499304734","2341006608","124285124","3611292857","705122019537526786","4854039087","3131215907","183710240","844312527714598912","2297800701","2297800701","721356581540139008","841114011907346434","2734633258","3361306893","839863410418417665","2188915322","224631368","97924015","70863204","403739431","190775491","3613212377","70225302","2696947939","111711850","824003845709856769","57697584","3635566457","16005780","41497892","819329771331092480","45956864","816404352617377792","149648464","2273715434","725092627717197824","383523145","812430248671318016","69544845","129240210","29497005","2541553717","2272341862","35030878","66155002","117573476","261391788","790936159933329409","181782278","305858168","3227712382","16982518","183698700","286410132","96007254","73502044","804672172815880193","347402383","52238464","95973203","801466370126966784","371121118","1711466106","78086011","51926740","56817212","346783493","787050443386093568","120522242","1241781384","2789335805","1180377751","780201309777436672","271194583","2170987075","36959803","166351744","2908318882","705176816718385152","549267461","349118698","140061281","457759550","524603271","136616923","1539981344","3232303876","704425226432602112","97297517","75183805","42297681","243893943","2790724987","260856271","17625297","757048392241573888","532136821","4312055957","164758076","750804772492611584","66710399","749759496529010689","2205952340","3356126309","77465537","2420594511","4750431747","3131051271","168651149","187687371","730486403268808704","1681713289","2671607358","285737866","2606705490","144147435","587456227","228499236","222669593","93645370","291817027","2370955321","62142057","55671706","16047533","33359002","21089302","415016302","56377755","2196899736","3023924386","163663856","3989762295","17458178","84367085","62380162","623456872","22380562","2458789956","54553529","222522843","3063745881","15528078","164728607","3590689053","82440879","61685667","24563088","2347611979","2312588436","208247183","221887173","2932767819","1791693493","3311108415","41960745","51839519","47995363","44512633","868245326","728374834930012161","201533790","2843653061","27543062","111423119","14229098","42072109","45470413","85947833","976857090","144394242","130368470","3017265245","2990584915","3366436433","83727950","40382688","721774492620582912"]
 
 var spotifyApi = new SpotifyWebApi({
     clientId: process.env.CLIENT_ID,
@@ -19,119 +23,109 @@ var T = new Twit({
 });
 
 
-spotifyApi.authorizationCodeGrant(process.env.SPOTIFY_CODE)
-.then(
-    function(data) {
-      console.log('The token expires in ' + data.body['expires_in']);
-      console.log('The access token is ' + data.body['access_token']);
-      console.log('The refresh token is ' + data.body['refresh_token']);
+// spotifyApi.authorizationCodeGrant(process.env.SPOTIFY_CODE)
+// .then(
+//     function(data) {
+//       console.log('The token expires in ' + data.body['expires_in']);
+//       console.log('The access token is ' + data.body['access_token']);
+//       console.log('The refresh token is ' + data.body['refresh_token']);
   
-      // Set the access token on the API object to use it in later calls
-      spotifyApi.setAccessToken(data.body['access_token']);
-      spotifyApi.setRefreshToken(data.body['refresh_token']);
-      return spotifyApi.addTracksToPlaylist(playlist, ["spotify:track:463CkQjx2Zk1yXoBuierM9"])
-    }
-)
-// spotifyApi.setAccessToken(process.env.SPOTIFY_TOKEN)
-// spotifyApi.addTracksToPlaylist(playlist, ["spotify:track:463CkQjx2Zk1yXoBuierM9"])
-.then(data => {
-    console.log("Added tweeted track to playlist!")
-    return T.get('followers/ids', { screen_name: 'erosinbetween' })
-})
-.then(result => {
-    console.log(result.data.ids.length)
-    followers = result.data.ids
-    return T.get('friends/ids', { screen_name: 'erosinbetween' })
-})
-.then(result => {
-    console.log(result.data.ids.length)
-    var mutuals = result.data.ids.filter(id => followers.includes(id))
-    mutuals.push("721774492620582912") //morg twitter id
-    mutuals = mutuals.map(mutual => mutual.toString())
-    mutuals.forEach(mutual => console.log(typeof mutual))
-    var stream = T.stream("statuses/filter", {follow: mutuals})
-    stream.on("tweet", (tweet) => {
-        // console.log(tweet.entities.urls)
-        // console.log(tweet.entities.urls[0].expanded_url)
-        // console.log(tweet.text)
-        if (tweet.entities.urls[0]){
-            console.log(tweet.entities.urls[0].expanded_url)
-            let songID = /open\.spotify\.com\/track\/([^\n\r?]*)/.exec(tweet.entities.urls[0].expanded_url);
-            if (songID) {
-                console.log(tweet.user.name)
-                console.log(songID[1])
-                spotifyApi.refreshAccessToken().then(
-                    function(data) {
-                      console.log('The access token has been refreshed!')               
-                      // Save the access token so that it's used in future calls
-                      spotifyApi.setAccessToken(data.body['access_token'])
-                      return spotifyApi.addTracksToPlaylist(playlist, ["spotify:track:" + songID[1]])
-                    },
-                    function(err) {
-                      console.log('Could not refresh access token', err);
-                    }
-                )
-                .then(
-                    function (data) {
-                        console.log(data)
-                        console.log("Added tweeted track to playlist!");
-                    },
-                    function (err) {
-                        console.log("Something went wrong!", err);
-                    }
-                )
-            }
-        }
-    })
-})
-.catch(err => console.log('caught error', err))
-
-// ,
-//     function(err) {
-//       console.log('Something went wrong!', err);
-//     }
-
-// spotifyApi.setAccessToken(process.env.SPOTIFY_TOKEN);
-
-// spotifyApi.addTracksToPlaylist(playlist, ["spotify:track:463CkQjx2Zk1yXoBuierM9"]).then(
-//     function (data) {
-//         console.log("Added tweeted track to playlist!");
-//     },
-//     function (err) {
-//         console.log("Something went wrong!", err);
+//       // Set the access token on the API object to use it in later calls
+//       spotifyApi.setAccessToken(data.body['access_token']);
+//       spotifyApi.setRefreshToken(data.body['refresh_token']);
 //     }
 // )
 
+spotifyApi.setAccessToken(process.env.SPOTIFY_TOKEN)
+spotifyApi.setRefreshToken(process.env.SPOTIFY_REFRESH);
 
+var stream = T.stream("statuses/filter", {follow: mutuals})
+stream.on("tweet", (tweet) => {
+    console.log("screen name: " + tweet.user.screen_name)
+    console.log("username: " + tweet.user.name)
+    console.log("text: " + tweet.text)
+    if (tweet.entities.urls[0]){
+        console.log(tweet.entities.urls[0].expanded_url)
+        let songID = /open\.spotify\.com\/track\/([^\n\r?]*)/.exec(tweet.entities.urls[0].expanded_url);
+        if (songID) {
+            console.log(tweet.user.name)
+            console.log(songID[1])
+            spotifyApi.refreshAccessToken().then(
+                function(data) {
+                    console.log('The access token has been refreshed!')               
+                    // Save the access token so that it's used in future calls
+                    console.log(data.body['access_token'])
+                    spotifyApi.setAccessToken(data.body['access_token'])
+                    return spotifyApi.addTracksToPlaylist(playlist, ["spotify:track:" + songID[1]])
+                },
+                function(err) {
+                    console.log('Could not refresh access token', err);
+                }
+            )
+            .then(
+                function (data) {
+                    console.log(data)
+                    console.log("Added tweeted track to playlist!");
+                },
+                function (err) {
+                    console.log("Something went wrong!", err);
+                }
+            )
+        }
+    }
+})
 
-// T.get('followers/ids', { screen_name: 'erosinbetween' },  function (err, data, response) {
-//     console.log(data.ids.length)
-//     followers = data.ids
-//     T.get('friends/ids', { screen_name: 'erosinbetween' },  function (err, following, response) {
-//         console.log(following.ids.length)
-//         var mutuals = following.ids.filter(id => followers.includes(id))
-//         var stream = T.stream("statuses/filter", {follow: mutuals});
-//         stream.on("tweet", (tweet) => {
-//             // console.log(tweet.entities.urls)
-//             // console.log(tweet.entities.urls[0].expanded_url)
-//             // console.log(tweet.text)
-//             if (tweet.entities.urls[0]){
-//                 let songID = /open\.spotify\.com\/track\/([^\n\r?]*)/.exec(tweet.entities.urls[0].expanded_url);
-//                 if (songID) {
-//                     console.log(songID[1])
-//                     spotifyApi.addTracksToPlaylist(playlist, ["spotify:track:" + songID[1]])
-//                     .then(
-//                         function (data) {
-//                             console.log("Added tweeted track to playlist!");
-//                         },
-//                         function (err) {
-//                             console.log("Something went wrong!", err);
-//                         }
-//                     )
-//                 }
+// spotifyApi.setAccessToken(process.env.SPOTIFY_TOKEN)
+// spotifyApi.addTracksToPlaylist(playlist, ["spotify:track:463CkQjx2Zk1yXoBuierM9"])
+// .then(data => {
+//     console.log("Added tweeted track to playlist!")
+//     return T.get('followers/ids', { screen_name: 'erosinbetween' })
+// })
+// T.get('followers/ids', { screen_name: 'erosinbetween' })
+// .then(result => {
+//     console.log(result.data.ids.length)
+//     followers = result.data.ids
+//     return T.get('friends/ids', { screen_name: 'erosinbetween' })
+// })
+// .then(result => {
+//     console.log(result.data.ids.length)
+//     var mutuals = result.data.ids.filter(id => followers.includes(id))
+//     mutuals.push("721774492620582912") //morg twitter id
+//     mutuals = mutuals.map(mutual => mutual.toString())
+//     mutuals.forEach(mutual => console.log(typeof mutual))
+//     var stream = T.stream("statuses/filter", {follow: mutuals})
+//     stream.on("tweet", (tweet) => {
+//         console.log("screen name: " + tweet.user.screen_name)
+//         console.log("username: " + tweet.user.name)
+//         console.log("text: " + tweet.text)
+//         if (tweet.entities.urls[0]){
+//             console.log(tweet.entities.urls[0].expanded_url)
+//             let songID = /open\.spotify\.com\/track\/([^\n\r?]*)/.exec(tweet.entities.urls[0].expanded_url);
+//             if (songID) {
+//                 console.log(tweet.user.name)
+//                 console.log(songID[1])
+//                 spotifyApi.refreshAccessToken().then(
+//                     function(data) {
+//                       console.log('The access token has been refreshed!')               
+//                       // Save the access token so that it's used in future calls
+//                       spotifyApi.setAccessToken(data.body['access_token'])
+//                       return spotifyApi.addTracksToPlaylist(playlist, ["spotify:track:" + songID[1]])
+//                     },
+//                     function(err) {
+//                       console.log('Could not refresh access token', err);
+//                     }
+//                 )
+//                 .then(
+//                     function (data) {
+//                         console.log(data)
+//                         console.log("Added tweeted track to playlist!");
+//                     },
+//                     function (err) {
+//                         console.log("Something went wrong!", err);
+//                     }
+//                 )
 //             }
-//         })
+//         }
 //     })
 // })
-
-//["45470413", "721774492620582912", "1291743094195585024","48832816"]
+// .catch(err => console.log('caught error', err))
