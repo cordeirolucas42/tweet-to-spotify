@@ -2,7 +2,7 @@ var Twit = require("twit");
 var EnvVar = require("dotenv");
 EnvVar.config();
 var SpotifyWebApi = require("spotify-web-api-node");
-const playlist = "0wS2r17uJCkTxBKwRDUJKj";
+const playlist = "7izBIhNG6DVZeomPPQJj2S";
 var followers = [];
 
 var spotifyApi = new SpotifyWebApi({
