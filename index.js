@@ -48,7 +48,7 @@ spotifyApi.authorizationCodeGrant(process.env.SPOTIFY_CODE)
     var mutuals = result.data.ids.filter(id => followers.includes(id))
     mutuals.push("721774492620582912") //morg twitter id
     mutuals = mutuals.map(mutual => mutual.toString())
-    mutuals.foreach(mutual => console.log(typeof mutual))
+    mutuals.forEach(mutual => console.log(typeof mutual))
     var stream = T.stream("statuses/filter", {follow: mutuals})
     stream.on("tweet", (tweet) => {
         // console.log(tweet.entities.urls)
