@@ -2,7 +2,7 @@ var Twit = require("twit");
 var EnvVar = require("dotenv");
 EnvVar.config();
 var SpotifyWebApi = require("spotify-web-api-node");
-const playlist = "7izBIhNG6DVZeomPPQJj2S";
+const playlist = process.env.PLAYLIST;
 var followers = [];
 
 var spotifyApi = new SpotifyWebApi({
@@ -46,13 +46,16 @@ spotifyApi.authorizationCodeGrant(process.env.SPOTIFY_CODE)
 .then(result => {
     console.log(result.data.ids.length)
     var mutuals = result.data.ids.filter(id => followers.includes(id))
-    mutuals.push("721774492620582912")
+    mutuals.push("721774492620582912") //morg twitter id
+    mutuals = mutuals.map(mutual => mutual.toString())
+    mutuals.foreach(mutual => console.log(typeof mutual))
     var stream = T.stream("statuses/filter", {follow: mutuals})
     stream.on("tweet", (tweet) => {
         // console.log(tweet.entities.urls)
         // console.log(tweet.entities.urls[0].expanded_url)
         // console.log(tweet.text)
         if (tweet.entities.urls[0]){
+            console.log(tweet.entities.urls[0].expanded_url)
             let songID = /open\.spotify\.com\/track\/([^\n\r?]*)/.exec(tweet.entities.urls[0].expanded_url);
             if (songID) {
                 console.log(tweet.user.name)
@@ -70,6 +73,7 @@ spotifyApi.authorizationCodeGrant(process.env.SPOTIFY_CODE)
                 )
                 .then(
                     function (data) {
+                        console.log(data)
                         console.log("Added tweeted track to playlist!");
                     },
                     function (err) {
