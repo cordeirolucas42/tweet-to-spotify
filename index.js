@@ -46,6 +46,7 @@ spotifyApi.authorizationCodeGrant(process.env.SPOTIFY_CODE)
 .then(result => {
     console.log(result.data.ids.length)
     var mutuals = result.data.ids.filter(id => followers.includes(id))
+    mutuals.push("721774492620582912")
     var stream = T.stream("statuses/filter", {follow: mutuals})
     stream.on("tweet", (tweet) => {
         // console.log(tweet.entities.urls)
@@ -54,6 +55,7 @@ spotifyApi.authorizationCodeGrant(process.env.SPOTIFY_CODE)
         if (tweet.entities.urls[0]){
             let songID = /open\.spotify\.com\/track\/([^\n\r?]*)/.exec(tweet.entities.urls[0].expanded_url);
             if (songID) {
+                console.log(tweet.user.name)
                 console.log(songID[1])
                 spotifyApi.refreshAccessToken().then(
                     function(data) {
