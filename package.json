@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/cordeirolucas42/tweet-to-spotify#readme",
   "dependencies": {
-    "dotenv": "^8.2.0",
+    "dotenv": "^8.6.0",
     "spotify-web-api-node": "^4.0.0",
     "twit": "^2.2.11"
   }
